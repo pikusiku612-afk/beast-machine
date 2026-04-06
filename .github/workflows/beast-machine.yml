@@ -17,7 +17,7 @@ jobs:
       - name: "Tailscale Setup"
         run: |
           curl -fsSL https://tailscale.com/install.sh | sh
-          sudo tailscale up --authkey=${{ secrets.TAILSCALE_AUTHKEY }} --hostname=beast-machine
+          sudo tailscale up --authkey=${{ secrets.TAILSCALE_AUTHKEY }} --hostname=server-computer
           
       - name: "SSH Setup"
         run: |
